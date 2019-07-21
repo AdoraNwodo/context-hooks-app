@@ -2,12 +2,14 @@ import React, { useContext, useState } from 'react'
 import { MusicContext } from '../contexts/MusicContext';
 
 const MusicForm = () => {
-    const { addMusic } = useContext(MusicContext)
+    const { dispatch } = useContext(MusicContext)
     const [title, setTitle] = useState("")
     const [artist, setArtist] = useState("")
     const handleSubmit = (e) => {
         e.preventDefault()
-        addMusic(title, artist)
+        dispatch({ type: 'ADD_MUSIC', music: {
+            title, artist
+        }})
         setTitle("")
         setArtist("")
     }
