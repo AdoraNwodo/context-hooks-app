@@ -5,9 +5,56 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #000000;
+  text-align: center;
+  color: #ffffff;
+  padding: 30px 70px;
+}
+.music-list ul{
+  margin-left: -40px; 
+}
+.music-list li{
+  list-style-type: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: rgb(41, 41, 41);
+}
+.header{
+  margin-bottom: 50px;
+}
+h3{
+  margin: 0px;
+}
+p{
+  margin: 5px 0px;
+}
+button{
+  background: transparent;
+  border: none;
+  color: palevioletred;
+  text-decoration: underline;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+form{
+  background: pink;
+  padding: 20px;
 }
+form input{
+  display: block;
+  margin: 0 auto;
+}
+form input[type=text]{
+  margin-bottom: 10px;
+  width: 70vw;
+  align-items: center;
+}
+form input[type=submit]{
+  padding: 5px 10px;
+  font-size: 16px;
+  background: black;
+  color: white;
+}
+.no-music{
+  margin-bottom: 30px;
+}
+
